@@ -1,0 +1,169 @@
+  <!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+   <title>Стилізація списків в CSS</title>
+  </head>
+  <style type="text/css">
+		
+
+		body{
+			margin: -10px;
+			
+background-image:url("14.gif");
+		}
+		.box {
+  
+  margin-right: 15px;
+  
+  border-radius: 5px;
+  background-color: rgb(207,232,220);
+  padding: 1em;
+}
+.dd {
+	margin: 4%;
+  width: 5230;
+}
+
+
+.special {
+  background-color: rgb(79,185,227);
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px ;
+  font-size: 40px ;
+  margin-top: 1px;
+}
+.sp {
+  background-color: rgb(204,255,204);
+  padding: 10px;
+  color: black;
+  border-radius: 10px ;
+  font-size: 20px ;
+  
+}
+.j{
+	width: 80;
+	
+}
+.we{
+	margin-top:-28%
+	
+}
+#si{position: fixed;
+	margin: -30px;
+	width: 250px;
+	height:100%;
+	background: rgb( 204,204,255);
+	border-right: 4px solid #E0E5EA;
+	left: -250px;
+
+	-moz-transition: all 600ms;
+	-webkit-transition: all 600ms;
+	transition: all 600ms ;
+
+}
+
+#si.active{
+	left: 5px;
+}
+#si ul li:not(:first-child) {
+	text-align: center;
+	color: white;
+	font-size: 1.1em;
+	outline-style: none;
+	padding: 25px 10px 10px 10px;
+}
+#si ul li a {
+	color: black;
+	text-decoration: none ;
+}
+
+#si ul li a:hover {color: #59e9df}
+
+#si .toggle-btn {
+	position: absolute;
+	left: 280px;
+	top: 20 px;
+	background: white;
+	padding: 10px;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+#si .toggle-btn:hover{background: #556270}
+#si .toggle-btn:hover span {background: #fafafa}
+
+#si toggle-btn span{
+	display: block;
+	weight: 25px ;
+	height: 4 px;
+	background-color: black;
+	margin: 4px ;
+}
+	</style>
+ 
+ <script >
+ 		function openMenu(){
+ 		document.getElementById("si").classList.toggle('active');	
+ 		}
+ 	</script>
+
+ <body>
+ 	<div id="si">
+ 		<div class="toggle-btn" onclick="openMenu()">
+ 			<img src="15.jpg" width="20px">
+
+ 		</div>
+ 		<ul>
+ 			<li> Меню сайта</li>
+ 			<li><a href="111.html"> Translate</a></li>
+ 			
+ 		
+ 		</ul>
+ 	</div>
+
+ 	<table bgcolor="white" class="dd" align="center" border="insert" >
+ 		<tr>
+ 	       <td colspan="4" align="center"><h1 align="center">CV</h1></td>
+
+        </tr>
+        <tr >
+        	<td width="265">
+ 	<div  ><img class="box" src="14.jpg" width="250">
+<p class="special"  align="center" > Тaras Herashenko</p></div>
+</td>
+<td colspan="2" width="4700"> 
+	<p class="sp" >Personal information:</p>
+	<table>
+	<tr><td><p class="f">· mobile phone</p></td><td><p>0631196634</p></tr>
+	<tr><td><p class="f">· e-mail</p></td><td><p>    tarasgarashenko@gmail.com </p></tr>
+	<tr><td><p class="f">· Age</p></td><td><p>18 років</p></tr>
+	<tr><td><p class="f">· citizenship   </p></td><td><p>UKRAINE</p></tr>
+	<tr><td><p class="f">· experience   </p></td><td><p></p>4 years 3 months</tr>
+	<tr><td><p class="f">· residence  </p></td><td><p>Zbarazh</p></tr>
+	<tr><td><p class="f">· Education  </p></td><td><p>full average</p></tr>
+		<tr><td   ><p class="we">· types of work  </p></td><td><p>electrician</p><p>NPP worker</p>
+			<p>fireman</p>
+			<p>military</p></tr>
+</table>
+
+
+
+
+
+
+</td>
+<td width="265"><p class="sp" >Experience </p>
+<p>The experience of working as an electrician is rather small. During his career, he learned how to refuel disposables and set switches in an electrical circuit.</p>
+<p>I am probably still working at the NPP since 2021. I needed information for an essay on BZD and I had to get a job in this profession (this was required by the site on which the information was required). </p>
+<p>I had to be a fireman when we were attacked by an orkostanyu. I was on duty, guarding the swamp from uninvited guests, and one beautiful night it caught fire. The Poltava pallium probably worked.</p>
+<p>I have been in the military since 2019. After joining KVL, my life stopped being ordinary and boring. Every day they came up with some activities and tasks for me (to roll a square, to carry a round). The most difficult quest for me was moving the "Albatross"  wich he lost at cardsas  part of the unit to a designated place.</p><p></p>
+</td>
+
+
+</tr>
+ <tr ><td colspan="4"><p>key skills:</p></td></tr>
+  </table>
+ </body>
+</html>

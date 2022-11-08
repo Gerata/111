@@ -1,0 +1,169 @@
+  <!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+   <title>Стилізація списків в CSS</title>
+  </head>
+  <style type="text/css">
+		
+
+		body{
+			margin: -10px;
+			
+background-image:url("14.gif");
+		}
+		.box {
+  
+  margin-right: 15px;
+  
+  border-radius: 5px;
+  background-color: rgb(207,232,220);
+  padding: 1em;
+}
+.dd {
+	margin: 4%;
+  width: 5230;
+}
+
+
+.special {
+  background-color: rgb(79,185,227);
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px ;
+  font-size: 40px ;
+  margin-top: 1px;
+}
+.sp {
+  background-color: rgb(204,255,204);
+  padding: 10px;
+  color: black;
+  border-radius: 10px ;
+  font-size: 20px ;
+  
+}
+.j{
+	width: 80;
+	
+}
+.we{
+	margin-top:-28%
+	
+}
+#si{position: fixed;
+	margin: -30px;
+	width: 250px;
+	height:100%;
+	background: rgb( 204,204,255);
+	border-right: 4px solid #E0E5EA;
+	left: -250px;
+
+	-moz-transition: all 600ms;
+	-webkit-transition: all 600ms;
+	transition: all 600ms ;
+
+}
+
+#si.active{
+	left: 5px;
+}
+#si ul li:not(:first-child) {
+	text-align: center;
+	color: black;
+	font-size: 1.1em;
+	outline-style: none;
+	padding: 25px 10px 10px 10px;
+}
+#si ul li a {
+	color: black;
+	text-decoration: none ;
+}
+
+#si ul li a:hover {color: #59e9df}
+
+#si .toggle-btn {
+	position: absolute;
+	left: 280px;
+	top: 20 px;
+	background: white;
+	padding: 10px;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+#si .toggle-btn:hover{background: #556270}
+#si .toggle-btn:hover span {background: #fafafa}
+
+#si toggle-btn span{
+	display: block;
+	weight: 25px ;
+	height: 4 px;
+	background-color: black;
+	margin: 4px ;
+}
+	</style>
+ 
+ <script >
+ 		function openMenu(){
+ 		document.getElementById("si").classList.toggle('active');	
+ 		}
+ 	</script>
+
+ <body>
+ 	<div id="si">
+ 		<div class="toggle-btn" onclick="openMenu()">
+ 			<img src="15.jpg" width="20px">
+
+ 		</div>
+ 		<ul>
+ 			<li> Меню сайта</li>
+ 			<li><a href="index.html"> Переклад</a></li>
+ 			
+ 		
+ 		</ul>
+ 	</div>
+
+ 	<table bgcolor="white" class="dd" align="center" border="insert" >
+ 		<tr>
+ 	       <td colspan="4" align="center"><h1 align="center">Резюме</h1></td>
+
+        </tr>
+        <tr >
+        	<td width="265">
+ 	<div  ><img class="box" src="14.jpg" width="250">
+<p class="special"  align="center" > Тарас Геращенко</p></div>
+</td>
+<td colspan="2" width="4700"> 
+	<p class="sp" >Особиста інформація:</p>
+	<table>
+	<tr><td><p class="f">· Мобільний телефон</p></td><td><p>0631196634</p></tr>
+	<tr><td><p class="f">· Електронна пошта</p></td><td><p>    tarasgarashenko@gmail.com </p></tr>
+	<tr><td><p class="f">· Вік</p></td><td><p>18 років</p></tr>
+	<tr><td><p class="f">· Громадянство   </p></td><td><p>УКРАЇНА</p></tr>
+	<tr><td><p class="f">· Досвід роботи   </p></td><td><p></p> 3 роки 4 місяці</tr>
+	<tr><td><p class="f">· Проживання  </p></td><td><p>Збараж</p></tr>
+	<tr><td><p class="f">· Освіта  </p></td><td><p>Повна середня та 1.3 курси інституту</p></tr>
+		<tr><td   ><p class="we">· Види роботи  </p></td><td><p>Електрик</p><p>робітник АЕС</p>
+			<p>Пожежник</p>
+			<p>Військовослужбовець</p></tr>
+</table>
+
+
+
+
+
+
+</td>
+<td width="265"><p class="sp" >Досвід роботи </p>
+<p>Досвід роботи електриком досить малий. За свою кар'єру навчився перезаправляти одноразки та ставити виключателі в електричне коло.</p>
+<p>Робітником АЕС я напевно перебуваю досі, з 2021 року. Мені треба була інформація для реферату по БЖД і мені прийшлося влаштуватися на дану професію(цього вимагав сайт на якому була потрібна інформація). </p>
+<p>Пожежником мені довелося бути коли на нас напав оркостаню. Я стояв на чергуванні, стеріг болото від незваних гостей і в одину прикрасну ніч воно загорілося. Напевно попрацював Полтавський палій.</p>
+<p>Військовослужбовцем я перебуваю з 2019року. Після вступу до КВЛ моє життя перестало бути звичайним та нудним. Кожен день мені придумували якісь заняття та завдання(котити квадратне, нести кругле). Найскладнішим квестом для мене було переміщення літака "Альбатрос" у складі підрозділу, на визначене місце.</p>
+</td>
+
+
+</tr>
+ <tr ><td colspan="4"><p>Ключові навички:</p></td></tr>
+  </table>
+ </body>
+</html>
